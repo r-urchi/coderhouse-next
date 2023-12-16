@@ -7,7 +7,7 @@ import Button from '../ui/Button'
 const CartList = () => {
 
     const { cart, emptyCart } = useCartContext()
-    const [filteredCart, setFilteredCart] = useState<any>([])
+    const [filteredCart, setFilteredCart] = useState([])
 
     const productsInCart = () => {
         const combinatedItems = {};

@@ -8,29 +8,6 @@ import { setDoc, doc, Timestamp, writeBatch, getDoc } from 'firebase/firestore'
 
 const createOrder = async (values, items) => {
 
-    // const docsPromises = items?.map((slug: any) => {
-    //     const docRef = doc(db, 'products', slug)
-    //     return getDoc(docRef)
-    // })
-
-    // const docs = await Promise.all(docsPromises)
-    // const batch = writeBatch(db)
-    // const outOfStock: any[] = []
-
-    // docs?.forEach((doc: any) => {
-    //     const { inStock } = doc.data()
-    //     const itemInCart = items?.find((item: any) => item?.slug === doc?.slug)
-    //     if (itemInCart?.quantity >= inStock) {
-    //         batch.update(doc.ref, { inStock: inStock - itemInCart.quantity })
-    //     } else {
-    //         outOfStock.push(itemInCart)
-    //     }
-    // })
-
-    // if (outOfStock.length > 0) {
-    //     return outOfStock
-    // }
-
     const order = {
         client: values,
         items: items?.map((item) => ({

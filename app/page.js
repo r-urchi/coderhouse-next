@@ -5,17 +5,6 @@ export const metadata = {
   description: 'Eectrodomésticos Capellari'
 }
 
-// export async function generateMetadata({params, searchParams}: any, parent: any) {
-//   const id  = params.id 
-//   const product = await fetch(`https://.../${id}`)
-//   .then((res: any) => res.json())
-
-//   return{
-//     title: product.title,
-//     description: product.description
-//   }
-// }
-
 export default function Home() {
   return (
     <>

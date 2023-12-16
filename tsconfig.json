@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/global-error.js", "app/about/team/page.js", "app/api/products/[category]/route.js", "app/api/product/[slug]/route.js", "app/api/contact/route.js"  ],
+, "app/global-error.js", "app/about/team/page.js", "app/api/products/[category]/route.js", "app/api/product/[slug]/route.js", "app/api/contact/route.js", "app/cart/page.js", "app/admin/orders/page.js", "app/admin/create/page.js", "app/admin/@login/page.js", "app/admin/page.js", "app/admin/layout.js"  ],
   "exclude": [
     "node_modules"
   ]
