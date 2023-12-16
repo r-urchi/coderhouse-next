@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/global-error.js"  ],
+, "app/global-error.js", "app/about/team/page.js", "app/api/products/[category]/route.js", "app/api/product/[slug]/route.js", "app/api/contact/route.js"  ],
   "exclude": [
     "node_modules"
   ]

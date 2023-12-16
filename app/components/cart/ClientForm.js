@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Button from '../ui/Button'
 import Notification from './Notification'
 import { useCartContext } from '../context/CartContext'
-import { db } from '@/firebase/config'
+import { db } from '../../../firebase/config'
 import { setDoc, doc, Timestamp, writeBatch, getDoc } from 'firebase/firestore'
 
 const createOrder = async (values, items) => {
