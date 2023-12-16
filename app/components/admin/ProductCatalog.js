@@ -2,12 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 
 const ProductCatalog = async () => {
-
+ //test
     const items = await fetch(`${process.env.VERCEL_URL}/api/products/all`, {
         cache: 'no-store'
     }).then(r => r?.json())
     
-
     return (
         <div className='container m-auto'>
             <Link href={'/admin/create'} className='flex mb-8 font-bold'>Nuevo producto +</Link>
