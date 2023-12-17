@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 const ProductCatalog = async () => {
 
-    const items = await fetch(`${process.env.VERCEL_URL}/api/products/all`, {
+    const items = await fetch(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/products/all`, {
         cache: 'no-cache'
-    }).then(r => r?.json())
+    }).then(r => r ? r?.json() : {})
     
     return (
         <div className='container m-auto'>
             <Link href={'/admin/create'} className='flex mb-8 font-bold'>Nuevo producto +</Link>
-            <div className='flex flex-col align-middle justify-center'>
+            {/* <div className='flex flex-col align-middle justify-center'>
 
                 {
                     items?.map((item, i) => (
@@ -39,7 +39,7 @@ const ProductCatalog = async () => {
                         </div>
                     ))
                 }
-            </div>
+            </div> */}
 
         </div>
     )
