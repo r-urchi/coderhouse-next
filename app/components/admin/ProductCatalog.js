@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 
 const ProductCatalog = async () => {
- //test
+
     const items = await fetch(`${process.env.VERCEL_URL}/api/products/all`, {
-        cache: 'no-store'
+        cache: 'no-cache'
     }).then(r => r?.json())
     
     return (
